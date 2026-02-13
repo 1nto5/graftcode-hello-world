@@ -28,8 +28,8 @@ Next.js (TypeScript)  ──WebSocket──▶  Graftcode Gateway (gg)  ──�
 ### 1. Get your Project Key
 
 1. Sign up / log in at [portal.graftcode.com](https://portal.graftcode.com)
-2. Create a new project
-3. Copy the **Project Key**
+2. Go to **Start deployment** and complete the deployment wizard
+3. Copy the **Project Key** from step 2 of the wizard
 
 ### 2. Start the backend
 
@@ -61,7 +61,7 @@ From the Vision portal at `localhost:81/GV`, copy the npm install command and ru
 cd frontend
 
 # The command from Vision portal will look something like:
-bun add @graft/<your-project-key>
+bun add --registry https://grft.dev/<your-project-key> @graft/<package-name>
 ```
 
 ### 4. Wire up the frontend
@@ -106,8 +106,9 @@ Open [http://localhost:3000](http://localhost:3000) and click **Call HelloServic
 recruitment-task/
 ├── backend/
 │   ├── hello_service/
+│   │   ├── __init__.py       # Python module init
 │   │   └── hello_world.py   # Python class — no framework, no HTTP, just methods
-│   └── Dockerfile            # Python + gg binary, exposes ports 80/81
+│   └── Dockerfile            # Python + gg (.deb), exposes ports 80/81
 ├── frontend/
 │   ├── src/app/
 │   │   ├── layout.tsx        # App shell
