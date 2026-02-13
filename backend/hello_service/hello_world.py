@@ -5,7 +5,7 @@ class HelloService:
     """A simple service exposed via Graftcode Gateway.
 
     Every public method in this class becomes callable from any language
-    through the auto-generated Graftcode SDK.
+    through the auto-generated Graftcode client package.
     """
 
     def hello(self, name: str) -> str:

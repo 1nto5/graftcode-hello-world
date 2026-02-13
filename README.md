@@ -4,7 +4,7 @@ A Next.js frontend calling a Python backend through Graftcode Gateway — no RES
 
 ## What is Graftcode?
 
-Graftcode lets you call backend methods directly from the frontend as if they were local functions. Under the hood, Graftcode Gateway (`gg`) exposes your backend classes over WebSocket and auto-generates a typed SDK for the frontend. The result: **zero boilerplate**, **cross-language interop**, and **type-safe method calls**.
+Graftcode lets you call backend methods directly from the frontend as if they were local functions. Under the hood, Graftcode Gateway (`gg`) exposes your backend classes over WebSocket and auto-generates a typed client package for the frontend. The result: **zero boilerplate**, **cross-language interop**, and **type-safe method calls**.
 
 ## Architecture
 
@@ -53,7 +53,7 @@ Verify it's running:
 - `docker ps` should show the container
 - Open [http://localhost:81/GV](http://localhost:81/GV) — you should see `HelloService` with its methods
 
-### 3. Install the generated SDK
+### 3. Install the generated package
 
 From the Vision portal at `localhost:81/GV`, copy the npm install command and run it in the frontend directory:
 

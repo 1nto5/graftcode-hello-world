@@ -4,7 +4,7 @@ import { useState } from "react";
 
 // These imports come from the auto-generated Graftcode package.
 // After running the backend container, visit http://localhost:81/GV
-// to get the npm install command (e.g., bun add @graft/<project-key>).
+// to get the install command (e.g., bun add --registry https://grft.dev/<key> @graft/<package>).
 //
 // import { GraftConfig, HelloService } from "@graft/<your-project-key>";
 
@@ -19,7 +19,7 @@ export default function Home() {
     setError(null);
 
     try {
-      // Uncomment after installing the generated @graft package:
+      // Uncomment after installing the generated @graft/ package:
       // GraftConfig.host = "ws://localhost/ws";
       // const helloResult = await HelloService.hello("Graftcode");
       // const timeResult = await HelloService.get_time();
